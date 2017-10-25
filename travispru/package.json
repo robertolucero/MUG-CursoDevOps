@@ -1,0 +1,16 @@
+{
+  "name": "travispru",
+  "description": "Simple Travis-CI",
+  "author": "dchavez",
+  "version": "0.0.1",
+  "devDependencies": {
+    "istanbul": "^0.4.4",
+    "jshint": "^2.9.2",
+    "mocha": "^2.5.3"
+  },
+  "scripts": {
+    "pretest": "node node_modules/jshint/bin/jshint . --exclude node_modules,coverage",
+    "test": "mocha",
+    "posttest": "istanbul cover node_modules/mocha/bin/_mocha && istanbul check-coverage --statements 90"
+  }
+}

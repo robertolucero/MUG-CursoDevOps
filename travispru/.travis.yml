@@ -1,0 +1,6 @@
+language: node_js
+node_js:
+- 8
+deploy:
+  provider: heroku
+  api_key: a539c475-a705-4073-b509-7fcaa6f0cd5a
